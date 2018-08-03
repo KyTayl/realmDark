@@ -3,7 +3,7 @@
 // @description  Makes realm actually useful!
 // @namespace    http://tampermonkey.net/
 // @author       Kye Taylor
-// @version      1.0.1
+// @version      1.0.2
 // @updateURL    https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @downloadURL  https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @include  https://realm.stpatricks.qld.edu.au/*
@@ -765,6 +765,11 @@ color: #FD0000 !important;
 
 li.subject-group div.list-item div.card.small-12:hover{
 background-color: #555555 !important
+}
+
+/*Arrow Down Fix*/
+a.icon-up-arrow.collapse {
+background-color: #444444 !important
 }
 
 ` );
