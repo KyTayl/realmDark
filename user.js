@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     SPC Dark Theme
-// @description  Makes realm actually useful
+// @description  Makes realm actually useful!
 // @namespace    http://tampermonkey.net/
 // @author       Kye Taylor
 // @version      1.0.0
