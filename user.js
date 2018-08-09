@@ -3,7 +3,7 @@
 // @description  Makes realm actually useful!
 // @namespace    http://tampermonkey.net/
 // @author       Kye Taylor
-// @version      1.0.2
+// @version      1.0.3
 // @updateURL    https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @downloadURL  https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @include  https://realm.stpatricks.qld.edu.au/*
@@ -281,12 +281,6 @@ color: #FFFFFF !important;
 .tabs dd>a:hover, .tabs .tab-title:hover>a {
 background-color: #444444 !important;
 color: #FFFFFF !important;
-}
-
-/*Tiles*/
-.tileList li span {
-color: rgba( 249, 249, 249, 0.9 ) !important;
-background-color: rgba( 50, 50, 50, 0.7 ) !important;
 }
 
 /*Tiles - Hover*/
@@ -599,9 +593,9 @@ font-weight: 600 !important;
 }
 
 /*Header Image*/
-.tileList li span {
+.tileList li span.title.text-bottom.text-center {
 color: rgba( 249, 249, 249, 0.9 ) !important;
-background: rgba( 50, 50, 50, 0 ) !important;
+background: rgba( 50, 50, 50, 0.5 ) !important;
 }
 
 /*        XAVIER HOUSE      */
@@ -769,7 +763,25 @@ background-color: #555555 !important
 
 /*Arrow Down Fix*/
 a.icon-up-arrow.collapse {
-background-color: #444444 !important
+background-color: #333333 !important
+}
+
+a.collapse.icon-down-arrow {
+background-color: #333333 !important
+}
+
+/*Text Fixes*/
+
+a.icon-course {
+color: #222222 !important
+}
+
+div.small-12.island section div.content article span {
+background-color: #3e3e3e !important
+}
+
+div.small-12.large-9.columns article span {
+color: #BBBBBB !important
 }
 
 ` );
