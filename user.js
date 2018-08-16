@@ -3,7 +3,7 @@
 // @description  Makes realm actually useful!
 // @namespace    http://tampermonkey.net/
 // @author       Kye Taylor
-// @version      1.0.3
+// @version      1.0.4
 // @updateURL    https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @downloadURL  https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @include  https://realm.stpatricks.qld.edu.au/*
@@ -93,10 +93,11 @@ h1{
 color: #FFFFFF !important;
 }
 
-/*UNKNOWN*/
+/*UNKNOWN
 .list-item{
-color: #FFFFFF !important;
+color: #0000FF !important;
 }
+*/
 
 /*News Headlines*/
 .tabs-content{
@@ -291,7 +292,7 @@ background-color: rgba( 50, 50, 50, 0.3 ) !important;
 /*Due Work*/
 .information-list{
 background-color: #444444 !important;
-color: #FFFFFF !important;
+color: #BBBBBB !important;
 }
 
 /*Due Work - Due Date Colour*/
@@ -784,4 +785,7 @@ div.small-12.large-9.columns article span {
 color: #BBBBBB !important
 }
 
+li.row.unread div.card.small-12.wrap-down p.body
+color: #444444 !important;
+}
 ` );
