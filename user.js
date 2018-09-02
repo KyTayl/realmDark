@@ -3,7 +3,7 @@
 // @description  Makes realm actually useful!
 // @namespace    http://tampermonkey.net/
 // @author       Kye Taylor
-// @version      1.0.5
+// @version      1.0.6
 // @updateURL    https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @downloadURL  https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @include  https://realm.stpatricks.qld.edu.au/*
@@ -552,7 +552,7 @@ text-decoration-color: #000000 !important;
 /*          NEWS         */
 
 /*No news text*/
-section.main-section div#container div#content div.row div.small-12.island section div.content p, section.main-section div#container div#content div.row div.small-12.island section div.content ul li {
+section.main-section div#container div#content div.row div.small-12.island section div.content ul li {
 color: #FFFFFF !important;
 }
 
@@ -633,7 +633,7 @@ background: #000000 !important;
 }
 
 ul.pagination li.current a, ul.pagination li.current button{
-background: #000000 !important
+background: #000000 !important;
 }
 
 ul.pagination li a, ul.pagination li button{
@@ -649,6 +649,45 @@ background: #000000 !important;
 /*Info Text Colour*/
 div.small-12.medium-10.columns.no-pad dl dt, div.small-12.medium-10.columns.no-pad dl dd {
 color: #DDDDDD !important;
+}
+
+/*        RESOURCES        */
+i.jstree-icon.jstree-themeicon.jstree-themeicon-custom::before {
+color: #FFFFFF !important;
+}
+
+.jstree-default .jstree-anchor .jstree-hovered, div.jstree-wholerow.jstree-wholerow-hovered, li.jstree-node.jstree-closed:hover {
+background: #222222 !important;
+}
+
+div.jstree-wholerow.jstree-wholerow-clicked, a.jstree-anchor.jstree-clicked, li.jstree-node.jstree-open a.jstree-anchor.jstree-clicked i.jstree-icon.jstree-themeicon.jstree-themeicon-custom::before {
+background: #EEEEEE !important;
+color: #000000 !important;
+}
+
+.resource-browser .meta-panel .meta-preview .icon-home::before {
+color: #FFFFFF !important;
+}
+
+.hint {
+color: #FFFFFF !important;
+background: #111111 !important;
+}
+
+div.reveal-modal.open h2 {
+color: #FFFFFF !important;
+}
+
+div.row div.small-6.medium-8.column p {
+color: #FFFFFF !important;
+}
+
+div.reveal-modal.open {
+color: #DDDDDD !important;
+}
+
+.has-tip:hover, .has-tip:focus {
+color: #FFFFFF !important;
 }
 
 /*        OPTIONS          */
@@ -774,15 +813,15 @@ background-color: #333333 !important
 /*Text Fixes*/
 
 a.icon-course {
-color: #222222 !important
+color: #222222 !important;
 }
 
 div.small-12.island section div.content article span {
-background-color: #3e3e3e !important
+background-color: #3e3e3e !important;
 }
 
 div.small-12.large-9.columns article span {
-color: #BBBBBB !important
+color: #BBBBBB !important;
 }
 
 li.row.unread div.card.small-12.wrap-down p.body {
@@ -790,11 +829,40 @@ color: #444444 !important;
 }
 
 article.content p {
-color: #BBBBBB !important
+color: #BBBBBB !important;
 }
 
 article.content ol{
-color: #BBBBBB !important
+color: #BBBBBB !important;
+}
+
+div.small-12.columns label {
+color: #FFFFFF !important;
+}
+
+/*Countdown Timer*/
+div.content ul.countdown-timer.flex-list li span {
+color: #000000 !important;
+}
+
+div.small-12.large-9.columns article p {
+color: #BBBBBB !important;
+}
+
+div.card.small-12 span[class^="icon-"]::before, div.card.small-12 span[class*=" icon-"]::before {
+color: #FFFFFF !important;
+}
+
+div.list-item div.card.small-12 h3 {
+color: #EEEEEE !important;
+}
+
+dt.small-12.medium-3 {
+color: #DDDDDD !important;
+}
+
+dd.small-12.medium-9 {
+color: #BBBBBB !important;
 }
 
 ` );
