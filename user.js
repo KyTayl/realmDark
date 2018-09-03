@@ -3,28 +3,13 @@
 // @description  Makes realm actually useful!
 // @namespace    http://tampermonkey.net/
 // @author       Kye Taylor
-// @version      1.0.6
+// @version      1.0.7
 // @updateURL    https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @downloadURL  https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @include  https://realm.stpatricks.qld.edu.au/*
 // @grant    GM_addStyle
+// @run-at document-start
 // ==/UserScript==
-
-function hide(e) {
-    var x = document.getElementById(e);
-    if(x){
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
-}
-hide("component4669"); // Hello (Name)
-hide("component15384"); // Large Boxes
-hide("component4670"); // News
-hide("footer"); // Footer
-
 
 GM_addStyle ( `
     /*
@@ -863,6 +848,14 @@ color: #DDDDDD !important;
 
 dd.small-12.medium-9 {
 color: #BBBBBB !important;
+}
+
+div.content article p {
+color: #BBBBBB !important;
+}
+
+div.content article p strong {
+color: #EEEEEE !important;
 }
 
 ` );
