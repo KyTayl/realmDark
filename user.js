@@ -3,7 +3,7 @@
 // @description  Makes realm actually useful!
 // @namespace    http://tampermonkey.net/
 // @author       Kye Taylor
-// @version      1.0.7
+// @version      1.0.8
 // @updateURL    https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @downloadURL  https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @include  https://realm.stpatricks.qld.edu.au/*
@@ -18,6 +18,42 @@ GM_addStyle ( `
 #FD0000 - Red
 
 */
+
+/*HIDE*/
+#component4669 {
+display: none;
+}
+
+#component15384 {
+display: none;
+}
+
+#component4670 {
+display: none;
+}
+
+#footer {
+display: none;
+}
+/**/
+
+.accordion .accordion-navigation.active > a, .accordion dd.active > a {
+background: rgba(40,40,40,0.8) !important;
+color: #FFFFFF !important;
+}
+.accordion .accordion-navigation > a, .accordion dd > a {
+background: #555555 !important;
+color: #FFFFFF !important;
+}
+
+.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+background: #666666 !important;
+color: #FFFFFF !important;
+}
+
+div.accordion-navigation.active div.content.active {
+background: #EEEEEE !important;
+}
 
 /* Icon Colour */
 [class^="icon-"], [class*=" icon-"] {
@@ -857,5 +893,42 @@ color: #BBBBBB !important;
 div.content article p strong {
 color: #EEEEEE !important;
 }
+
+div.small-12.island section.content {
+color: #BBBBBB !important;
+}
+
+label.checkbox-label {
+color: #FFFFFF !important;
+}
+
+input[type="checkbox"]:not(.plain):not(:disabled) + label.checkbox-label:hover:before, body.login input[type="checkbox"]:not(.plain):not(:disabled) + label:hover::before, input[type="checkbox"]:not(.plain):not(:disabled) + label.checkbox-label:hover::after, body.login input[type="checkbox"]:not(.plain):not(:disabled) + label:hover::after {
+background: #333333 !important;
+}
+
+input[type="checkbox"]:not(.plain):checked + label.checkbox-label::before, body.login input[type="checkbox"]:not(.plain):checked + label::before, input[type="checkbox"]:not(.plain):checked + label.checkbox-label::after, body.login input[type="checkbox"]:not(.plain):checked + label::after {
+color: #FFFFFF !important;
+background: #222222 !important;
+}
+
+input[type="checkbox"]:not(.plain) + label.checkbox-label::before, body.login input[type="checkbox"]:not(.plain) + label::before {
+background: #000000 !important;
+}
+
+.dzone {
+    border: 0.0625rem dashed #000000 !important;
+    color: #000000 !important;
+}
+
+.dzone:hover {
+    border-color: #000000 !important;
+    background-color: #DDDDDD !important;
+    color: #000000 !important;
+}
+
+.accordion .accordion-navigation > a, .accordion dd > a {
+background: #333333 !important;
+}
+
 
 ` );
