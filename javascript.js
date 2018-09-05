@@ -10,6 +10,7 @@
 // @run-at document-end
 // ==/UserScript==
 
+/*
 function hide(e) {
     var x = document.getElementById(e);
     if(x){
@@ -24,3 +25,4 @@ hide("component4669"); // Hello (Name)
 hide("component15384"); // Large Boxes
 hide("component4670"); // News
 hide("footer"); // Footer
+*/
