@@ -3,7 +3,7 @@
 // @description  Makes realm actually useful!
 // @namespace    http://tampermonkey.net/
 // @author       Kye Taylor
-// @version      1.0.8
+// @version      1.0.9
 // @updateURL    https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @downloadURL  https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @include  https://realm.stpatricks.qld.edu.au/*
