@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name     SPC Dark Theme
 // @description  Makes realm actually useful!
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/KyTayl/realmDark
 // @author       Kye Taylor
-// @version      1.0.8
+// @version      1.0.10
 // @updateURL    https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @downloadURL  https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @include  https://realm.stpatricks.qld.edu.au/*
@@ -20,6 +20,11 @@ GM_addStyle ( `
 */
 
 /*HIDE*/
+
+#component4665 {
+display: none;
+}
+
 #component4669 {
 display: none;
 }
@@ -34,6 +39,10 @@ display: none;
 
 #footer {
 display: none;
+}
+
+#overflow-nav > li:nth-child(11) {
+display: none !important;
 }
 /**/
 
@@ -930,5 +939,71 @@ background: #000000 !important;
 background: #333333 !important;
 }
 
+.left-off-canvas-menu .left-submenu {
+background: #333333 !important;
+}
+
+.left-off-canvas-menu .left-submenu .back>a {
+background: #444444 !important;
+}
+
+.tabs {
+border-bottom: 1px solid #444444 !important;
+background: #444444 !important;
+}
+
+.tabs dd.active a, .tabs li.tab-title.active a {
+    border-bottom: 2px solid #111111 !important;
+}
+
+.tabs dd.active>a, .tabs .tab-title.active>a {
+    background: #111111 !important;
+    color: #FFFFFF !important;
+}
+
+.tabs dd a:hover, .tabs li.tab-title a:hover {
+    color: #FFFFFF !important;
+    border-bottom: 2px solid #222222;
+}
+
+#component-layout .column-top .component-titlebar h2, #component-layout .column-top .component-titlebar a {
+    color: #000000 !important;
+}
+
+#component-layout .column-left .component-titlebar h2, #component-layout .column-left .component-titlebar a {
+    color: #000000 !important;
+}
+
+.hybrid-bar ul li a:hover {
+    background-color: #222222 !important;
+}
+
+.hybrid-bar ul li a.navthis {
+    background-color: #3e3e3e !important;
+}
+
+li.row.unread div.card.small-12.wrap-down p.body a {
+    color: #000000 !important;
+}
+
+li.row.read div.card.small-12.wrap-down p.body a {
+    color: #FFFFFF !important;
+}
+
+.global-search {
+    background: #333333 !important;
+}
+
+.right-off-canvas-menu {
+    background: #444444 !important;
+}
+
+h1, h2, h3 {
+color: #EEEEEE !important;
+}
+
+h4, h5, h6 {
+    color: #DDDDDD !important;
+}
 
 ` );
