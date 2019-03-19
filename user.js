@@ -3,7 +3,7 @@
 // @description  Makes realm actually useful!
 // @namespace    https://github.com/KyTayl/realmDark
 // @author       Kye Taylor
-// @version      1.0.10
+// @version      1.1.0
 // @updateURL    https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @downloadURL  https://raw.githubusercontent.com/KyTayl/realmDark/master/user.js
 // @include  https://realm.stpatricks.qld.edu.au/*
@@ -833,11 +833,11 @@ background-color: #555555 !important
 
 /*Arrow Down Fix*/
 a.icon-up-arrow.collapse {
-background-color: #333333 !important
+background-color: #FFFFFF !important
 }
 
 a.collapse.icon-down-arrow {
-background-color: #333333 !important
+background-color: #FFFFFF !important
 }
 
 /*Text Fixes*/
@@ -896,6 +896,10 @@ color: #BBBBBB !important;
 }
 
 div.content article p {
+color: #BBBBBB !important;
+}
+
+div.content article p span {
 color: #BBBBBB !important;
 }
 
@@ -1003,6 +1007,18 @@ color: #EEEEEE !important;
 }
 
 h4, h5, h6 {
+    color: #DDDDDD !important;
+}
+
+#component-layout .column-left .island section {
+    color: #DDDDDD !important;
+}
+
+#component-layout .column-right .component-titlebar h2, #component-layout .column-right .component-titlebar a {
+    color: #000000 !important;
+}
+
+#component-layout .column-top .island section {
     color: #DDDDDD !important;
 }
 
